@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Benny & Indah</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cover Overlay / Cover Depan -->
+    <div id="cover" class="cover-overlay">
+        <div class="cover-content">
+            <p class="sub-title">THE WEDDING OF</p>
+            <h1 class="couple-title">Benny & Indah</h1>
+            
+            <div class="recipient-box">
+                <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
+                <h3 id="guest-name">Yogi dan Ratna</h3>
+                <p class="location-note">Di Tempat</p>
+            </div>
+
+            <button class="btn-open" onclick="openInvitation()">
+                <i class="fa-solid fa-envelope-open"></i> Buka Undangan
+            </button>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+    <button class="music-toggle" id="music-btn" onclick="toggleMusic()">
+        <i class="fa-solid fa-compact-disc fa-spin"></i>
+    </button>
+
+    <!-- Main Content Undangan -->
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <p class="sub-title">THE WEDDING OF</p>
+            <h2 class="main-names">Benny & Indah</h2>
+            <p class="wedding-date">Minggu, 30 September 2026</p>
+        </section>
+
+        <!-- Quote & Salam -->
+        <section class="quote-section">
+            <div class="batik-frame">
+                <p class="quote-text">
+                    "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."
+                </p>
+                <p class="quote-author">QS. Ar-Rum: 21</p>
+            </div>
+        </section>
+
+        <!-- MempelaI Section -->
+        <section class="mempelai-section">
+            <h2 class="section-title">Pasangan Mempelai</h2>
+            <p class="section-desc">Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga perikatan pernikahan ini menjadi keberkahan.</p>
+
+            <div class="mempelai-container">
+                <!-- Mempelai Wanita -->
+                <div class="mempelai-card">
+                    <div class="avatar-box">
+                        <img src="https://via.placeholder.com/200/8B5A2B/FFFFFF?text=Indah" alt="Indah">
+                    </div>
+                    <h3>Indah Sukma, S.Pd</h3>
+                    <p class="parents">Putri dari Bapak Nasrudin Hatta <br>& Ibu Elma Muna</p>
+                    <a href="https://instagram.com" target="_blank" class="btn-social"><i class="fa-brands fa-instagram"></i> @indah.sukma</a>
+                </div>
+
+                <div class="ampersand">&</div>
+
+                <!-- Mempelai Pria -->
+                <div class="mempelai-card">
+                    <div class="avatar-box">
+                        <img src="https://via.placeholder.com/200/8B5A2B/FFFFFF?text=Benny" alt="Benny">
+                    </div>
+                    <h3>Benny Erlangga, S.Pd</h3>
+                    <p class="parents">Putra dari Bapak Suherman <br>& Ibu Rahmawati</p>
+                    <a href="https://instagram.com" target="_blank" class="btn-social"><i class="fa-brands fa-instagram"></i> @benny.erlangga</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Timer -->
+        <section class="countdown-section">
+            <h2 class="section-title">Menghitung Hari</h2>
+            <div class="timer-box">
+                <div class="time-card"><span id="days">00</span><small>Hari</small></div>
+                <div class="time-card"><span id="hours">00</span><small>Jam</small></div>
+                <div class="time-card"><span id="minutes">00</span><small>Menit</small></div>
+                <div class="time-card"><span id="seconds">00</span><small>Detik</small></div>
+            </div>
+            <a href="#" class="btn-action"><i class="fa-regular fa-calendar-check"></i> Simpan ke Kalender</a>
+        </section>
+
+        <!-- Acara / Event -->
+        <section class="event-section">
+            <h2 class="section-title">Acara Pernikahan</h2>
+            
+            <div class="event-cards">
+                <!-- Akad Nikah -->
+                <div class="event-card">
+                    <i class="fa-solid fa-ring event-icon"></i>
+                    <h3>Akad Nikah</h3>
+                    <p class="date"><i class="fa-regular fa-calendar"></i> Jumat, 10 Oktober 2026</p>
+                    <p class="time"><i class="fa-regular fa-clock"></i> 08.00 WIB - Selesai</p>
+                    <p class="location"><strong>Kediaman Mempelai Wanita</strong><br>Jl. Gatot Subroto GG Putri Ayu VI No. 14, Kota Blitar</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn-action"><i class="fa-solid fa-map-location-dot"></i> Google Maps</a>
+                </div>
+
+                <!-- Resepsi Nikah -->
+                <div class="event-card">
+                    <i class="fa-solid fa-glass-water-droplet event-icon"></i>
+                    <h3>Resepsi</h3>
+                    <p class="date"><i class="fa-regular fa-calendar"></i> Minggu, 12 Oktober 2026</p>
+                    <p class="time"><i class="fa-regular fa-clock"></i> 11.00 WIB - Selesai</p>
+                    <p class="location"><strong>Gedung Serbaguna Blitar</strong><br>Jl. Merdeka No. 45, Kota Blitar</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn-action"><i class="fa-solid fa-map-location-dot"></i> Google Maps</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Digital Envelope / Hadiah -->
+        <section class="gift-section">
+            <h2 class="section-title">Amplop Digital</h2>
+            <p>Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika Anda ingin memberikan hadiah, dapat melalui rekening berikut:</p>
+            
+            <div class="bank-card">
+                <h4>Bank BCA</h4>
+                <p class="rekening" id="rek1">1234567890</p>
+                <p>a.n. Benny Erlangga</p>
+                <button onclick="copyText('rek1')" class="btn-copy"><i class="fa-regular fa-copy"></i> Salin No. Rekening</button>
+            </div>
+            
+            <div class="bank-card">
+                <h4>Bank Mandiri</h4>
+                <p class="rekening" id="rek2">0987654321</p>
+                <p>a.n. Indah Sukma</p>
+                <button onclick="copyText('rek2')" class="btn-copy"><i class="fa-regular fa-copy"></i> Salin No. Rekening</button>
+            </div>
+        </section>
+
+        <!-- RSVP & Ucapan -->
+        <section class="rsvp-section">
+            <h2 class="section-title">Konfirmasi & Doa Restu</h2>
+            <form id="rsvp-form" onsubmit="submitForm(event)">
+                <input type="text" placeholder="Nama Lengkap" required>
+                <select required>
+                    <option value="">Konfirmasi Kehadiran</option>
+                    <option value="Hadir">Hadir</option>
+                    <option value="Tidak Hadir">Tidak Hadir</option>
+                </select>
+                <textarea placeholder="Tuliskan ucapan & doa..." rows="4" required></textarea>
+                <button type="submit" class="btn-action">Kirim Ucapan</button>
+            </form>
+
+            <div class="wishes-box" id="wishes-list">
+                <div class="wish-item">
+                    <strong>Yogi & Ratna</strong> <span class="badge">Hadir</span>
+                    <p>Selamat untuk Benny dan Indah! Semoga menjadi keluarga yang sakinah, mawaddah, warahmah.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Terima Kasih Atas Doa & Restu Anda</p>
+            <p><strong>Benny & Indah</strong></p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Ambil Nama Tamu dari URL Parameter (?to=Nama)
+        const urlParams = new URLSearchParams(window.location.search);
+        const guestName = urlParams.get('to');
+        if (guestName) {
+            document.getElementById('guest-name').innerText = decodeURIComponent(guestName);
+        }
+
+        // Buka Undangan
+        function openInvitation() {
+            document.getElementById('cover').classList.add('hide');
+            let music = document.getElementById('bg-music');
+            music.play();
+        }
+
+        // Toggle Music
+        function toggleMusic() {
+            let music = document.getElementById('bg-music');
+            let btn = document.getElementById('music-btn');
+            if (music.paused) {
+                music.play();
+                btn.classList.add('playing');
+            } else {
+                music.pause();
+                btn.classList.remove('playing');
+            }
+        }
+
+        // Countdown Timer Target Date (Contoh 30 Sept 2026)
+        const targetDate = new Date("Sep 30, 2026 08:00:00").getTime();
+        setInterval(function() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            if (distance > 0) {
+                document.getElementById("days").innerText = days < 10 ? "0" + days : days;
+                document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+                document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+                document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+            }
+        }, 1000);
+
+        // Copy Rekening
+        function copyText(id) {
+            const text = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(text);
+            alert("Nomor rekening berhasil disalin!");
+        }
+
+        // Form Submit Simulation
+        function submitForm(e) {
+            e.preventDefault();
+            alert("Terima kasih atas ucapan dan konfirmasinya!");
+        }
+    </script>
+</body>
+</html>
